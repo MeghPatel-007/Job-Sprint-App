@@ -1,17 +1,60 @@
-# jobsprint
+# Jobsprint
 
-A new Flutter project.
+A Flutter application. This README only documents files and folders that are actually present in this repository.
 
-## Getting Started
+## What is in this repo
 
-This project is a starting point for a Flutter application.
+- Flutter project root files: `pubspec.yaml`, `pubspec.lock`, `analysis_options.yaml`, `devtools_options.yaml`
+- Platform folders present: `android/`, `ios/`, `web/`, `linux/`, `macos/`, `windows/`
+- Main app entry: `lib/main.dart`
+- App source tree: `lib/src/` (contains `assets/` and `features/` including `authentication`)
+- Tests: `test/` folder
 
-A few resources to get you started if this is your first Flutter project:
+## Quick start (local)
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+1. Install Flutter and ensure `flutter` is on your PATH.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+2. Get dependencies:
+
+```bash
+flutter pub get
+```
+
+3. Run on a connected device or emulator:
+
+```bash
+flutter run
+```
+
+4. Run tests:
+
+```bash
+flutter test
+```
+
+5. Build a release APK (Android):
+
+```bash
+flutter build apk --release
+```
+
+Build and run commands for other platforms follow the standard Flutter CLI (e.g. `flutter build web`, `flutter build macos`).
+
+## Project structure (relevant)
+
+- `lib/main.dart` — application entrypoint
+- `lib/src/` — app source (assets and feature modules)
+- `android/`, `ios/`, `web/`, `linux/`, `macos/`, `windows/` — platform projects
+- `test/` — unit / widget tests
+- `pubspec.yaml` — dependencies and metadata
+
+## Notes
+
+- This README intentionally lists only items that exist in the repository. If you want, I can expand sections with:
+  - dependency highlights from `pubspec.yaml`
+  - a simple development checklist for running on each platform
+  - CI or release notes based on your preferences.
+
+---
+
+Updated to reflect actual project contents.
