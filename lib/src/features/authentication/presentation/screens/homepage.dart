@@ -20,7 +20,6 @@ class HomeScreen extends StatefulWidget {
       _HomeScreenState(items: items, cities: cities);
 }
 
-//! change this to stl
 class _HomeScreenState extends State<HomeScreen> {
   final List<HomeItem> items;
   final List<String> cities;
